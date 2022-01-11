@@ -1,3 +1,29 @@
+:root{
+    /*========== Colors ==========*/
+    
+    --hetic-color : #26E8A0;
+    
+    --bg-color : #1E1E1E;
+    
+    --text-color: #f0f8ff;
+    
+    /*========== Fonts ==========*/
+    
+    --body-font-regular : 'ClashDisplay-Regular', sans-serif;
+    
+    --body-font-light: 'ClashDisplay-Light', sans-serif;
+    
+    --body-font-extraLight : 'ClashDisplay-Extralight', sans-serif;
+    
+    --body-font-bold : 'ClashDisplay-Bold', sans-serif;
+    
+    --body-font-medium : 'ClashDisplay-Medium', sans-serif;
+    
+    --body-font-semiBold : 'ClashDisplay-Semibold', sans-serif;
+    
+  }
+
+
 .App {
   text-align: center;
 }
@@ -14,7 +40,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1E1E1E;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

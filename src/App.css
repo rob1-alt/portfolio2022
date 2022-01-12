@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'ClashDisplay-Regular' ;
+  src: url(./fonts/ClashDisplay-Regular.otf);
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Light' ;
+  src: url(./fonts/ClashDisplay-Light.otf);
+}
+@font-face {
+  font-family: 'ClashDisplay-Semibold' ;
+  src: url(./fonts/ClashDisplay-Semibold.otf);
+}
+
+
 :root{
     /*========== Colors ==========*/
     
@@ -12,16 +27,11 @@
     --body-font-regular : 'ClashDisplay-Regular', sans-serif;
     
     --body-font-light: 'ClashDisplay-Light', sans-serif;
-    
-    --body-font-extraLight : 'ClashDisplay-Extralight', sans-serif;
-    
-    --body-font-bold : 'ClashDisplay-Bold', sans-serif;
-    
-    --body-font-medium : 'ClashDisplay-Medium', sans-serif;
-    
+          
     --body-font-semiBold : 'ClashDisplay-Semibold', sans-serif;
     
   }
+
 
 
 .App {
@@ -33,14 +43,9 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #1E1E1E;
+  font-family: 'ClashDisplay-Regular' ;
+  background-color: var(--bg-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -50,15 +55,13 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.wrapperHomepage{
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.halfRight{
+  text-align: left;
 }

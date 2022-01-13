@@ -38,6 +38,7 @@ function App() {
           <div className='rectangle'></div>
           <div className='ellipse'>
             <img src={ellipse}></img>
+            <h1>Spoty</h1>
           </div>
       </header>
     </div>

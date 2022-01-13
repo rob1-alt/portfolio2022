@@ -105,14 +105,19 @@ li{
 }
 
 .rectangle{
-z-index: 9999;
-width: 84.5vw;
-height: 80vh;
-background: rgba(188, 188, 188, 0.05);
-backdrop-filter: blur(99px);
-border-radius: 20px;
+  z-index: 9999;
+  width: 84.5vw;
+  height: 80vh;
+  background: rgba(188, 188, 188, 0.05);
+  backdrop-filter: blur(99px);
+  border-radius: 20px;
 }
 
 .ellipse{
-  z-index: 0;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 720px;
 }
+
+

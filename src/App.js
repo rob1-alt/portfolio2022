@@ -1,5 +1,4 @@
 import './App.css';
-import { Routes, Route, Link } from "react-router-dom";
 import ellipse from './img/Ellipse3.svg'
 import { Helmet } from 'react-helmet'
 
@@ -35,6 +34,7 @@ function App() {
       </header>
       <header className='App2-header'>
         <scrollpage id='1'></scrollpage>
+        <img  className='ellipse' src={ellipse}/>
           <div className='rectangle'>
             <h1>2021</h1>
             <p>
@@ -43,6 +43,9 @@ function App() {
             <span>
               School Project
             </span>
+            <p>
+            Durant une seconde semaine intensive nous avons eu pour objectif de créer un service fullstack grâce à une API. Mon équipe et moi avons choisi l’API de Spotify. Vous pouvez voir ici les maquettes de notre front. Si vous voulez jeter un coup d’oeil à notre code je vous laisse aller voir les repo Spoty sur mon github.
+            </p>
           </div>
       </header>
     </div>

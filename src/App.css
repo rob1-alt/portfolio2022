@@ -100,6 +100,9 @@ a{
 ul{
   list-style-type: none;
 }
+li{
+  margin: 2.4vw;
+}
 
 .rectangle{
 z-index: 9999;
@@ -112,7 +115,4 @@ border-radius: 20px;
 
 .ellipse{
   z-index: 0;
-  position: absolute;
-  left: 0;
-  top: 740  px;
 }

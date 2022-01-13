@@ -35,10 +35,14 @@ function App() {
       </header>
       <header className='App2-header'>
         <scrollpage id='1'></scrollpage>
-          <div className='rectangle'></div>
-          <div className='ellipse'>
-            <img src={ellipse}></img>
-            <h1>Spoty</h1>
+          <div className='rectangle'>
+            <h1>2021</h1>
+            <p>
+              Spoty API
+            </p>
+            <span>
+              School Project
+            </span>
           </div>
       </header>
     </div>

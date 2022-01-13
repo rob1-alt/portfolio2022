@@ -1,4 +1,6 @@
 import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import ellipse from './img/Ellipse3.svg'
 import { Helmet } from 'react-helmet'
 
 
@@ -14,7 +16,7 @@ function App() {
         <div className='wrapperHomepage'>
           <div className='halfRight'>
             <h3>
-              Bonjour, Je suis Robin Pautigny - étudiant en 3ème année à Hetic.
+              Bonjour, Je suis Robin Pautigny - étudiant en 3ème année à <a href="https://www.hetic.net/" target="_blank"><span className='heticGreen'>Hetic</span></a>.
               Je m’intéresse aux nouvelles technologies, aux voitures ainsi qu’au marketing. Actuellement à la recherche d’un stage en tant que Chef de projet digital.
             </h3>
           </div>
@@ -22,13 +24,21 @@ function App() {
             <nav className='menuNav'>
               <ul>
                 <li>À propos de moi</li>
-                <li>Projets</li>
+                <a href="#1">
+                  <li>Projets</li>
+                </a>
                 <li>Contact</li>
               </ul>
             </nav>
-
           </div>
         </div>
+      </header>
+      <header className='App2-header'>
+        <scrollpage id='1'></scrollpage>
+          <div className='rectangle'></div>
+          <div className='ellipse'>
+            <img src={ellipse}></img>
+          </div>
       </header>
     </div>
   );

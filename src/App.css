@@ -117,7 +117,10 @@ li{
   z-index: 1;
   position: absolute;
   left: 0;
-  top: 720px;
+  top: 740px;
 }
 
+.rectangle::before{
+  src: url(./img/Ellipse3.svg);
+}
 

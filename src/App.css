@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: 'ClashDisplay-Regular' ;
   src: url(./fonts/ClashDisplay-Regular.otf);
@@ -107,13 +105,28 @@ li{
 }
 
 .rectangle{
-  font-weight:400 ;
   z-index: 9999;
   width: 84.5vw;
   height: 80vh;
   background: rgba(188, 188, 188, 0.05);
   backdrop-filter: blur(99px);
   border-radius: 20px;
+}
+
+.SpotyLink:hover{
+  color: #1ed760;
+}
+
+.leftInfos{
+  text-align: left;
+  align-items: left;
+  margin-left: 2vw;
+}
+
+.project{
+  font-family: var(--body-font-semiBold);
+  text-align: left;
+  align-items: left;
 }
 
 .sliderScreen{

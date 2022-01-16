@@ -23,7 +23,7 @@ const settings = {
   infinite: true,
   speed: 600,
   slidesToShow: 2,
-  slidesToScroll: 1
+  slidesToScroll: 1,
 };
 
 function App() {
@@ -56,13 +56,19 @@ function App() {
       <header className='App2-header'>
         <scrollpage id='1'></scrollpage>
           <div className='rectangle'>
-            <h3>2021</h3>
-            <p>
-              Spoty API
-            </p>
-            <span>
-              School Project
-            </span>
+            <div className='leftInfos'>
+              <h2>2021</h2  >
+              <div className='project'>
+                <a href="https://spoty-react.vercel.app/">
+                <p className='SpotyLink'>
+                  Spoty API
+                </p>
+                </a>
+                <span>
+                  School Project
+                </span>
+              </div>
+            </div>
             <p>
             Durant une seconde semaine intensive nous avons eu pour objectif de créer un service fullstack grâce à une API. Mon équipe et moi avons choisi l’API de Spotify. Vous pouvez voir ici les maquettes de notre front. Si vous voulez jeter un coup d’oeil à notre code je vous laisse aller voir les repo Spoty sur mon <a href='https://github.com'><span>Github</span></a>.
             </p>

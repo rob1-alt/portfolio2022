@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: 'ClashDisplay-Regular' ;
   src: url(./fonts/ClashDisplay-Regular.otf);
@@ -105,6 +107,7 @@ li{
 }
 
 .rectangle{
+  font-weight:400 ;
   z-index: 9999;
   width: 84.5vw;
   height: 80vh;
@@ -113,14 +116,17 @@ li{
   border-radius: 20px;
 }
 
-.ellipse{
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  top: 740px;
+.sliderScreen{
+  max-width: 40vw;
+  max-height: 36vh;
+  border-radius: 7px;
+  align-items: center;
 }
+
+
 
 .rectangle::before{
   src: url(./img/Ellipse3.svg);
+  z-index: 1 ;
 }
 

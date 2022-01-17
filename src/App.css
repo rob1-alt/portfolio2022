@@ -156,6 +156,10 @@ li{
   font-size: 0.7em;
 }
 
+.slider{
+  margin-top: 6vw;
+}
+
 /*1st article*/
 .SpotyLink:hover{
   color: #1ed760;

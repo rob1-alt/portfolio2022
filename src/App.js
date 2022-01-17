@@ -80,7 +80,7 @@ function App() {
                   Durant une seconde semaine intensive nous avons eu pour objectif de créer un service fullstack grâce à une API. Mon équipe et moi avons choisi l’API de Spotify. Vous pouvez voir ici les maquettes de notre front. Si vous voulez jeter un coup d’oeil à notre code je vous laisse aller voir les repo Spoty sur mon <a href='https://github.com'><span>Github</span></a>.
                 </p>
             </div>
-            <Slider {...settings}>
+            <Slider {...settings}  className='slider'>
           <div>
             <img  className='sliderScreen' src={Spoty1}/>
           </div>
@@ -128,7 +128,7 @@ function App() {
               Durant une première semaine intensive de l’année, notre professeur de Design M.Charassin nous a confié une mission. Créer un produit de Design Fiction, c’est une pratique du design qui consiste à explorer les implications d'évolutions futures. Il peut s'agir de futur probable, possible, ou complètement spéculatif. Voici les maquettes de notre produit.
               </p>
             </div>
-            <Slider {...settings}>
+            <Slider {...settings} className='slider'>
           <div>
             <img  className='sliderScreen' src={Fast1}/>
           </div>

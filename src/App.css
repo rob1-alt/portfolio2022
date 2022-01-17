@@ -36,8 +36,7 @@ html {
     
   }
 
-
-
+/*PAGE STRUCTURE OF MY CONTENTS*/
 .App {
   text-align: center;
 }
@@ -56,7 +55,7 @@ html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text-color);
 }
 
 .App2-header{
@@ -68,10 +67,21 @@ html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text-color);
+}
+.App3-header{
+  font-family: var(--body-font-regular) ;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--text-color);
 }
 
-
+/*STYLE OF MY HomePAGE */
 
 .wrapperHomepage{
   display: grid;
@@ -84,7 +94,7 @@ html {
 
 .heticGreen:hover{
   color: var(--hetic-color);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 a{
@@ -104,6 +114,8 @@ li{
   margin: 2.4vw;
 }
 
+/*ARTICLE LAYOUT ==> CONTENT IN*/
+
 .rectangle{
   z-index: 9999;
   width: 84.5vw;
@@ -113,8 +125,17 @@ li{
   border-radius: 20px;
 }
 
-.SpotyLink:hover{
-  color: #1ed760;
+.wrapperText{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+
+.sliderScreen{
+  max-width: 40vw;
+  max-height: 36vh;
+  border-radius: 7px;
+  align-items: center;
 }
 
 .leftInfos{
@@ -129,17 +150,26 @@ li{
   align-items: left;
 }
 
-.sliderScreen{
-  max-width: 40vw;
-  max-height: 36vh;
-  border-radius: 7px;
-  align-items: center;
+.descriptionArticle{
+  padding-top: 4vw;
+  text-align: left;
+  font-size: 0.7em;
+}
+
+/*1st article*/
+.SpotyLink:hover{
+  color: #1ed760;
+}
+
+
+/*2nd article*/
+
+.FastLink:hover{
+  color: #727272;
 }
 
 
 
-.rectangle::before{
-  src: url(./img/Ellipse3.svg);
-  z-index: 1 ;
-}
+
+
 

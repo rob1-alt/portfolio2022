@@ -1,3 +1,5 @@
+import React, {Component} from 'react';
+import Loading from './loading';
 import './App.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,6 +33,15 @@ const settings = {
   slidesToShow: 2,
   slidesToScroll: 1,
 };
+const settings1 = {
+  dots: true,
+  adaptiveHeight : true,
+  centerMode: true,
+  infinite: true,
+  speed: 600,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+}
 
 function App() {
   return (
@@ -81,6 +92,33 @@ function App() {
                 </p>
             </div>
             <Slider {...settings}  className='slider'>
+          <div>
+            <img  className='sliderScreen' src={Spoty1}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Spoty2}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Spoty3}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Spoty4}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Spoty5}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Spoty6}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Spoty7}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Spoty8}/>
+          </div>
+        </Slider>
+
+        <Slider {...settings1}  className='sliderResponsive'>
           <div>
             <img  className='sliderScreen' src={Spoty1}/>
           </div>

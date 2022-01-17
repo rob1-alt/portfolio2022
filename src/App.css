@@ -57,6 +57,10 @@ html {
   font-size: calc(10px + 2vmin);
   color: var(--text-color);
 }
+@keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity:1;}
+}
 
 .App2-header{
   font-family: var(--body-font-regular) ;
@@ -86,6 +90,7 @@ html {
 .wrapperHomepage{
   display: grid;
   grid-template-columns: 50% 50%;
+  animation: fadeIn 3s;
 }
 
 .heticGreen{
@@ -105,6 +110,7 @@ a{
 .halfRight{
   text-align: left;
   margin-left: 7vw ;
+  
 }
 
 ul{
@@ -177,3 +183,32 @@ li{
 
 
 
+
+
+/*RESPONSIVE FOR MOBILE DEVICES*/
+
+@media  screen and (max-width:768px) {
+  .halfRight{
+    text-align: center;
+  }
+    .wrapperHomepage{
+      display: flex;
+      text-align: center;
+      align-items: center;
+    }
+    .menuNav{
+      display: none;
+    }
+
+ .slider{
+   visibility: hidden;
+ }
+}
+
+
+@media screen and (min-width:768px){
+  .sliderResponsive{
+    visibility: hidden;
+    background: red;
+  }
+}

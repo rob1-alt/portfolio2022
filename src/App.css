@@ -190,6 +190,7 @@ li{
 @media  screen and (max-width:768px) {
   .halfRight{
     text-align: center;
+    margin-left: 0 ;
   }
     .wrapperHomepage{
       display: flex;

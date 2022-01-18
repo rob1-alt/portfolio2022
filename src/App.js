@@ -54,7 +54,9 @@ function App() {
   },[])
   return loader ?(
     <header className='App-headerloader'>
+
       <Loader/>
+      <h1>Cooking some magical things...🧙‍♂️</h1>
     </header>
   ) : (
     <div className="App">

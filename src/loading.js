@@ -1,13 +1,10 @@
 import React from "react";
-import ReactLoading from 'react-loading';
+import LoaderGIF from './img/loader.gif'
 
-const Loading = () =>{
-    <div className="loading">
-        <ReactLoading
-        type='cylon'
-        color='#bada55'
-        />
-    </div>
+export default function Loader() {
+    return(
+        <div>
+            <img src={LoaderGIF}/>
+        </div>
+    )
 }
-
-export default Loading

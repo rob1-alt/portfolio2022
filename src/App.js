@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import Loading from './loading';
+import React, {useState, useEffect} from 'react';
+import Loader from './loading'
 import './App.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -44,7 +44,19 @@ const settings1 = {
 }
 
 function App() {
-  return (
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+
+    setTimeout(() => {
+      setLoader(false);
+    },3000)
+  },[])
+  return loader ?(
+    <header className='App-headerloader'>
+      <Loader/>
+    </header>
+  ) : (
     <div className="App">
       <Helmet>
         <title>{title}</title>

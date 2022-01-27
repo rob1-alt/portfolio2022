@@ -4,6 +4,7 @@ import './App.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ellipse from './img/Ellipse3.svg';
+import logoGit from './img/github.png'
 import Spoty1 from './img/Spoty1.jpg';
 import Spoty2 from './img/Spoty2.jpg';
 import Spoty3 from './img/Spoty3.jpg';
@@ -18,6 +19,11 @@ import Fast3 from './img/Fast3.jpg';
 import Fast4 from './img/Fast4.jpg';
 import Fast5 from './img/Fast5.jpg';
 import Fast6 from './img/Fast6.jpg';
+import Oralb1 from './img/Oralb1.jpg'
+import Oralb2 from './img/Oralb2.jpg'
+import Oralb3 from './img/Oralb3.jpg'
+import Oralb4 from './img/Oralb4.jpg'
+import Oralb5 from './img/Oralb5.jpg'
 import { Helmet } from 'react-helmet';
 import Slider from 'react-slick';
 
@@ -25,7 +31,7 @@ import Slider from 'react-slick';
 const title = 'Robin Pautigny'
 
 const settings = {
-  dots: true,
+  dots: false,
   adaptiveHeight : true,
   centerMode: true,
   infinite: true,
@@ -33,15 +39,7 @@ const settings = {
   slidesToShow: 2,
   slidesToScroll: 1,
 };
-const settings1 = {
-  dots: true,
-  adaptiveHeight : true,
-  centerMode: true,
-  infinite: true,
-  speed: 600,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-}
+
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -131,33 +129,6 @@ function App() {
           <img  className='sliderScreen' src={Spoty8}/>
           </div>
         </Slider>
-
-        <Slider {...settings1}  className='sliderResponsive'>
-          <div>
-            <img  className='sliderScreen' src={Spoty1}/>
-          </div>
-          <div>
-          <img  className='sliderScreen' src={Spoty2}/>
-          </div>
-          <div>
-          <img  className='sliderScreen' src={Spoty3}/>
-          </div>
-          <div>
-          <img  className='sliderScreen' src={Spoty4}/>
-          </div>
-          <div>
-          <img  className='sliderScreen' src={Spoty5}/>
-          </div>
-          <div>
-          <img  className='sliderScreen' src={Spoty6}/>
-          </div>
-          <div>
-          <img  className='sliderScreen' src={Spoty7}/>
-          </div>
-          <div>
-          <img  className='sliderScreen' src={Spoty8}/>
-          </div>
-        </Slider>
       </div>
       </header>
       <header className='App3-header'>
@@ -200,7 +171,46 @@ function App() {
           <img  className='sliderScreen' src={Fast6}/>
           </div>
         </Slider>
-
+          </div>
+      </header>
+      <header className='App3-header'>
+          <div className='rectangle'>
+            <div className='wrapperText'>
+              <div className='leftInfos'>
+                <h2>2020</h2  >
+                <div className='project'>
+                  <a target="_blank" href="https://rob1-alt.github.io/index.html">
+                  <p className='OralBLink'>
+                    Oral-B  .IO 
+                  </p>
+                  </a>
+                  <span>
+                    School Project
+                  </span>
+                </div>
+              </div>
+              <p className='descriptionArticle'>
+                Première semaine intensive de développement web à <a href="https://www.hetic.net/" target="_blank"><span className='heticGreen'>Hetic</span></a> . Mon équipe et moi avons eu pour projet de coder une Landing Page pour la nouvelle brosse à dents de Oral-B.
+                Nous avons donc réfléchit a avoir le site le plus corporate possible, quelque chose qui fonctionne bien et qui est épuré.
+              </p>
+            </div>
+            <Slider {...settings} className='slider'>
+          <div>
+            <img  className='sliderScreen' src={Oralb1}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Oralb2}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Oralb3}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Oralb4}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Oralb5}/>
+          </div>
+        </Slider>
           </div>
       </header>
     </div>

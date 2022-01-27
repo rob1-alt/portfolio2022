@@ -134,6 +134,14 @@ li{
 
 /*ARTICLE LAYOUT ==> CONTENT IN*/
 
+.git{
+  margin-top: 10px;
+  max-width: 32px;
+}
+.upperEllipse{
+
+}
+
 .rectangle{
   z-index: 9999;
   width: 84.5vw;
@@ -170,8 +178,9 @@ li{
 
 .descriptionArticle{
   padding-top: 4vw;
-  text-align: left;
+  text-align: justify;
   font-size: 0.7em;
+  max-width: 37vw;
 }
 
 .slider{
@@ -182,12 +191,28 @@ li{
 .SpotyLink:hover{
   color: #1ed760;
 }
+.SpotyLink{
+  text-decoration: underline;
+}
 
 
 /*2nd article*/
 
 .FastLink:hover{
   color: #727272;
+}
+
+.FastLink{
+  text-decoration: underline;
+}
+
+/*3rd project*/
+
+.OralBLink:hover{
+  color: #003882;
+}
+.OralBLink{
+  text-decoration: underline;
 }
 
 

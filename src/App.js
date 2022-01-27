@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import Loader from './loading'
+import { AiOutlineLinkedin } from "react-icons/ai";
+import {AiFillGithub} from "react-icons/ai"
+import {AiFillMail} from "react-icons/ai"
 import './App.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import IMAGES from './img/index';
 import ellipse from './img/Ellipse3.svg';
 import logoGit from './img/github.png'
 import Spoty1 from './img/Spoty1.jpg';
@@ -24,6 +28,11 @@ import Oralb2 from './img/Oralb2.jpg'
 import Oralb3 from './img/Oralb3.jpg'
 import Oralb4 from './img/Oralb4.jpg'
 import Oralb5 from './img/Oralb5.jpg'
+import Corse1 from './img/Corse1.jpg'
+import Corse2 from './img/Corse2.jpg'
+import Corse3 from './img/Corse3.jpg'
+import Corse4 from './img/Corse4.jpg'
+import Corse5 from './img/Corse5.jpg'
 import { Helmet } from 'react-helmet';
 import Slider from 'react-slick';
 
@@ -48,7 +57,7 @@ function App() {
 
     setTimeout(() => {
       setLoader(false);
-    },3000)
+    },4000)
   },[])
   return loader ?(
     <header className='App-headerloader'>
@@ -84,6 +93,7 @@ function App() {
       </header>
       <header className='App2-header'>
         <scrollpage id='1'></scrollpage>
+        <img src={ellipse} className="upperEllipse"/>
           <div className='rectangle'>
             <div className='wrapperText'>
               <div className='leftInfos'>
@@ -148,7 +158,7 @@ function App() {
                 </div>
               </div>
               <p className='descriptionArticle'>
-              Durant une première semaine intensive de l’année, notre professeur de Design M.Charassin nous a confié une mission. Créer un produit de Design Fiction, c’est une pratique du design qui consiste à explorer les implications d'évolutions futures. Il peut s'agir de futur probable, possible, ou complètement spéculatif. Voici les maquettes de notre produit.
+              Durant la première semaine intensive de l’année, notre professeur de Design M.Charassin nous a confié une mission. Créer un produit de Design Fiction, c’est une pratique du design qui consiste à explorer les implications d'évolutions futures. Il peut s'agir de futur probable, possible, ou complètement spéculatif. Voici les maquettes de notre produit.
               </p>
             </div>
             <Slider {...settings} className='slider'>
@@ -169,6 +179,46 @@ function App() {
           </div>
           <div>
           <img  className='sliderScreen' src={Fast6}/>
+          </div>
+        </Slider>
+          </div>
+      </header>
+      <header className='App3-header'>
+          <div className='rectangle'>
+            <div className='wrapperText'>
+              <div className='leftInfos'>
+                <h2>2020</h2>
+                <div className='project'>
+                  <a target="_blank" href="https://www.figma.com/file/B1FB6DFXA4vCqcIf5iXMvA/Maquette%2Fzoning?node-id=0%3A1">
+                  <p className='CorseLink'>
+                    Corse Matin
+                  </p>
+                  </a>
+                  <span>
+                    School Project
+                  </span>
+                </div>
+              </div>
+              <p className='descriptionArticle'>
+                Ici pour ce projet, nous avons eu l'honneur d'avoir un vrai client en face de nous. En effet la rédaction de Corse Matin nous a contacté pour repenser le design de leur site internet ainsi que celui de leur application. Voici donc les design que nous avons proposés.
+              </p>
+              
+            </div>
+            <Slider {...settings} className='slider'>
+          <div>
+            <img  className='sliderScreen' src={Corse1}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Corse2}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Corse3}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Corse4}/>
+          </div>
+          <div>
+          <img  className='sliderScreen' src={Corse5}/>
           </div>
         </Slider>
           </div>
@@ -212,6 +262,17 @@ function App() {
           </div>
         </Slider>
           </div>
+      </header>
+      <header className='App3-header'>
+        <h1>Robin Pautigny</h1>
+        <h2>Made with love ❤️</h2>
+        <h3>Social medias :</h3>
+
+        <ul className='socialMedias'>
+          <li><a href="https://www.linkedin.com/in/robin-pautigny/" target="_blank"><AiOutlineLinkedin /></a></li>
+          <li><a href="https://github.com/rob1-alt" target="_blank"><AiFillGithub/></a></li>
+          <li><a href="mailto:robin.pautigny@hetic.net"><AiFillMail/></a></li>
+        </ul>
       </header>
     </div>
   );

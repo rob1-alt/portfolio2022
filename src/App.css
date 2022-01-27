@@ -139,6 +139,8 @@ li{
   max-width: 32px;
 }
 .upperEllipse{
+  position: fixed;
+  left: 0;
 
 }
 
@@ -207,6 +209,14 @@ li{
 }
 
 /*3rd project*/
+.CorseLink:hover{
+  color: #fb052a;
+}
+.CorseLink{
+  text-decoration: underline;
+}
+
+/*4rd project*/
 
 .OralBLink:hover{
   color: #003882;
@@ -216,11 +226,10 @@ li{
 }
 
 
-
-
-
-
-
+.socialMedias{
+  display: flex;
+  flex-direction: row;
+}
 
 /*RESPONSIVE FOR MOBILE DEVICES*/
 
@@ -238,10 +247,11 @@ li{
       display: none;
     }
 
- .slider{
-   visibility: hidden;
- }
+.slider{
+  visibility: hidden;
+  }
 }
+
 
 
 @media screen and (min-width:768px){

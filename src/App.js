@@ -265,8 +265,8 @@ function App() {
       </header>
       <header className='App3-header'>
         <h1>Robin Pautigny</h1>
-        <h2>Made with love </h2>
-        <h3>Social medias <a href='https://textup.fr/610262g7'>❤️‍🩹</a></h3>
+        <h2>Made with love ❤️</h2>
+        <h3>Social medias :</h3>
 
         <ul className='socialMedias'>
           <li><a href="https://www.linkedin.com/in/robin-pautigny/" target="_blank"><AiOutlineLinkedin /></a></li>

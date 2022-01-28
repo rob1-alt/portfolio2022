@@ -265,7 +265,7 @@ function App() {
       </header>
       <header className='App3-header'>
         <h1>Robin Pautigny</h1>
-        <h2>Made with love ❤️</h2>
+        <h2>Made with love test</h2>
         <h3>Social medias :</h3>
 
         <ul className='socialMedias'>

@@ -229,6 +229,9 @@ li{
 .socialMedias{
   display: flex;
   flex-direction: row;
+  text-align: center;
+  align-items: center;
+  margin-right: 40px;
 }
 
 /*RESPONSIVE FOR MOBILE DEVICES*/
